@@ -1,16 +1,16 @@
 //Import in all required hooks and dependencies
 
-//Import in all required datasets
-import iataCodes from './Assets/Data/IATAcodes.js';
+//Import in all components
+import Map from './Components/Map.js'
 
 
 
-function App() {
+
+
+export default function App() {
   return (
-    <div className="App">
-      
+    <div id='application'>
+      <Map/>
     </div>
   );
-}
-
-export default App;
+};

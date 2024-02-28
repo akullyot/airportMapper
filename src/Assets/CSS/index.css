@@ -1,0 +1,39 @@
+.fullHeightMap {
+  height: 80vh;
+}
+
+.marker {
+  margin-top: -10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 2rem;
+  background: lightgreen;
+  display: inline-block;
+  border-bottom-right-radius: 0;
+  position: relative;
+  transform: rotate(45deg);
+  border: 1px solid rgb(92, 163, 92);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.marker #icon {
+  color: forestgreen;
+  font-size: 35px;
+  transform: rotate(-45deg);
+}
+
+.marker::after {
+  content: "";
+  background: rgba(128, 128, 128, 0.2);
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(45deg) scaleX(0.5);
+}
+
+/*# sourceMappingURL=index.css.map */
